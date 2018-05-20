@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:text="Your order"
+            android:layout_width="193dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/currentOrderTextView"
+    />
+    <ListView
+            android:id="@+id/orderItemsList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <Button
+            android:text="Nothing to order"
+            android:id="@+id/orderButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"/>
+    <TextView
+            android:text="Current order(s)"
+            android:layout_width="193dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+    />
+    <ListView
+            android:id="@+id/ordersList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    />
+</LinearLayout>
