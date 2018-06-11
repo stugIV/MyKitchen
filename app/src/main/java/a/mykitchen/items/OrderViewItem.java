@@ -48,7 +48,7 @@ public class OrderViewItem {
             case ISSUED: return context.getString(R.string.STATUS_ISSUED);
             case APPROVED: return context.getString(R.string.STATUS_APPROVED);
         }
-        
+
         return context.getString(R.string.STATUS_UNKNOWN);
     }
 }
