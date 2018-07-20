@@ -27,7 +27,7 @@ public class OrderViewItem {
 
         created = (TextView) view.findViewById(R.id.order_item_created);
         cost = (TextView) view.findViewById(R.id.order_item_cost);
-        status = (TextView) view.findViewById(R.id.order_item_status);
+        status = (TextView) view.findViewById(R.id.queue_item_status);
         amount = (TextView) view.findViewById(R.id.order_item_amount);
 
         SimpleDateFormat f = new SimpleDateFormat("hh:mm");

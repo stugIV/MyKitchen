@@ -75,6 +75,7 @@ public class OrdersFragment extends Fragment {
         }
 
     }
+
     public class GetOrdersTask extends AsyncTask<Void, Void, Order[]> {
         private static final String ORDER_URL = "order";
 

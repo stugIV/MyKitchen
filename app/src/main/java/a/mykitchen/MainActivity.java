@@ -49,10 +49,15 @@ public class MainActivity extends AppCompatActivity {
         objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
         jsonConverter.setObjectMapper(objectMapper);
 
-        queueFragment = new QueueFragment();
+        queueFragment = QueueFragment.builder()
+                .context(this)
+                .converter(jsonConverter)
+                .build();
         ordersFragment = new OrdersFragment();
         ordersFragment.setConverter(jsonConverter);
         ordersFragment.setContext(this);
+
+        showQueue();
     }
 
     private void showQueue() {
